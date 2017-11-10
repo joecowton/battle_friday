@@ -7,7 +7,7 @@ describe 'Battle', :type => :feature do
 
   it 'Player 1 gets confirmation of attacking Player 2' do
     sign_in_and_play
-    click_button('AttackP2')
+    click_button('Attack')
     expect(page).to have_content "Allan! You have attacked Dania!"
   end
 end
