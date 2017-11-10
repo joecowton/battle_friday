@@ -1,7 +1,7 @@
-<%= @game.player_1.name %> attacked <%= @game.player_2.name %>! <br>
+<%= @game.opponent_of(@game.current_turn).name %> attacked <%= @game.current_turn.name %>! <br>
 <!-- # <%= @player_1_name %>! You have <%= @player_1_hp %> HP! <br>
 # <%= @player_2_name %>! You have <%= @player_2_hp %> HP! -->
 
 <form action='/play'>
-<input type="submit" value="Play Again">
+<input type="submit" value="OK">
 </form>
