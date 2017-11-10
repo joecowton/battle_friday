@@ -11,6 +11,7 @@ require 'player'
 describe Player do
   subject(:dave) { Player.new('Dave') }
   subject(:mittens) { Player.new('Mittens') }
+  subject(:game) { Game.new(dave, mittens )}
 
   describe '#name' do
     it 'returns the name' do
@@ -27,7 +28,7 @@ describe Player do
   describe '#attack' do
     it 'damages the player' do
       expect(mittens).to receive(:receive_damage)
-      dave.attack(mittens)
+      game.attack(mittens)
     end
   end
 

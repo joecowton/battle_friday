@@ -1,6 +1,6 @@
-<%= @player_1_name %>! You have attacked <%= @player_2_name %>! <br>
-<%= @player_1_name %>! You have <%= @player_1_hp %> HP! <br>
-<%= @player_2_name %>! You have <%= @player_2_hp %> HP!
+<%= @game.player_1.name %> attacked <%= @game.player_2.name %>! <br>
+<!-- # <%= @player_1_name %>! You have <%= @player_1_hp %> HP! <br>
+# <%= @player_2_name %>! You have <%= @player_2_hp %> HP! -->
 
 <form action='/play'>
 <input type="submit" value="Play Again">
