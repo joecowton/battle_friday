@@ -10,7 +10,6 @@ describe 'Switch turns', :type => :feature do
       click_button 'Attack'
       click_button 'OK'
       expect(page).not_to have_content "Allan's turn"
-      save_and_open_page
       expect(page).to have_content "Dania's turn"
     end
   end
